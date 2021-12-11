@@ -1,0 +1,12 @@
+[package]
+name = "join_compile_commands_json"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Kuba Jaroszewski <jakub.jaroszewski@gmail.com>"]
+keywords = ["clang"]
+categories = ["encoding"]
+description = "A simple utility to join multiple compile_commands.json files into one"
+
+[dependencies]
+tokio = { version = "1.14.0", features = ["fs", "macros", "rt", "rt-multi-thread", "sync"] }
